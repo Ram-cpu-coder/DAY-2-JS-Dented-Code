@@ -41,6 +41,17 @@ arg.splice(2, 0, "Sabi"); //adds the new element in the index 2 moving the other
 
 //this is forming a new array while deleting the elements from index 3 but keeping the 2 items before index 3. // 2 is number of element  here
 
+// const value = arg.slice(3, 4);
+
+// this is not mutating the original array but is reading the data from the array . here it is reading the data from index 3 to index 4 
+
+// changing the array to string and back to string 
+
+// const value = arg.toString();
+//changing the array to string
+
+const value = arg.split();
+
 
 
 console.log(value, arg);
