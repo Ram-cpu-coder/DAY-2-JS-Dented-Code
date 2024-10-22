@@ -292,3 +292,17 @@ obj.skills[2].pop("redux");
 console.log(obj);
 
 
+///
+function customReduce(nums, fn, init){
+    let val = init;
+
+    for(let i = 0; i<nums.length; i++){
+        val = fn(val + nums[i]);
+    }
+
+    return val;
+}
+
+const nums = [ 2,3,3544,45,4];
+const summ = (a,b) => a + b;
+console.log(customReduce(nums, summ, 0));
