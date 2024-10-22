@@ -230,7 +230,6 @@ for (let i = 0; unique.length < 50; i++) {
 
     if (!unique.includes(num)) {
         unique.push(num);
-
     }
     console.log(i);
 
@@ -238,5 +237,58 @@ for (let i = 0; unique.length < 50; i++) {
 
 console.log(unique);
 
+
+
+////OBJECT
+
+const obj = {
+    name: "Ram",
+    phone: 23084,
+    isStudent: true,
+    skills: ["html", "css", ["react", "redux"],"js"],
+    parent: {
+        f: "harry",
+        m: "mary",
+    },
+    bio: () => { 
+        return "Hello";
+    },
+}
+
+// console.log(obj);
+
+
+
+///read the properties of object
+
+// const value = obj.name;
+
+//const value = obj["name"];   ///other way to read property
+
+// const value = obj.skills[2];
+
+// const value = obj.parent.m;
+
+// const value = obj.bio();
+
+// console.log(value);
+
+
+
+
+//updating the value of the property of the object
+
+// obj.name = "Shyam";
+// obj.skills.push("React"); //updating the array inside the object
+
+
+///delete the value or property
+
+// delete obj.name; //deletes the property
+// obj.name = undefined; // its not good to mutate the original object so we normally use this one to delete the property 
+
+obj.skills[2].pop("redux");
+
+console.log(obj);
 
 
