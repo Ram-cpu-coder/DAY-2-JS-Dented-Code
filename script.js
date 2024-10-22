@@ -10,7 +10,7 @@
 //length, push, pop, shift, unshift, toString, join, [], splice, slice, indexOf, includes
 
 
-const arg = ["ram", "hari", 324, 33, 4 ["aar", 223], {name: "hari"},()=>{}];
+const arg = ["ram", "hari", 324, 33, 4["aar", 223], { name: "hari" }, () => { }];
 
 // const value = arg.length;
 
@@ -86,16 +86,64 @@ console.log(arg.reverse());
 
 
 console.log(arg.sort());
-
+//it is case sensitive and takes the upper case first while sorting as ASKY standard the lower case char has high value 
 
 //while sorting the function inside the array, it will look after the name of the function and sorts
 
 // in case of the number it looks after the first digit of the num and sorts 
 
 
-//another way to sort 
+//another way to sort the numbers only not affecting the string and other
 
-console.log(arg.sort((a,b)=>a-b));
+console.log(arg.sort((a, b) => a - b));
 
 
-console.log(arg.sort((a,b)=>b-a));
+console.log(arg.sort((a, b) => b - a));
+
+
+
+///loop
+
+//for
+
+for (let i = 0; i < 100; i++) {
+    console.log(i);
+}
+for (let i = 100; i > 0; i--) {
+    console.log(i);
+}
+
+
+//while
+
+// give the initial value outside of the while loop
+// give the condition in the parenthesis
+
+let j = 10;
+
+while (j > 0) {
+    console.log(j);
+    j--;
+}
+
+// do while
+
+let k = 0;
+
+do {
+    console.log(k);
+    k++;
+} while (k < 10)
+
+
+
+//continue
+let l = 0;
+
+do {
+    // console.log(l);
+    l++;
+} while (l < 10)
+
+
+//break
