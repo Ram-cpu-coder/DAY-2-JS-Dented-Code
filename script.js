@@ -10,7 +10,7 @@
 //length, push, pop, shift, unshift, toString, join, [], splice, slice, indexOf, includes
 
 
-const arg = ["ram", "hari", 324, ["aar", 223], {name: "hari"},()=>{}];
+const arg = ["ram", "hari", 324, 33, 4 ["aar", 223], {name: "hari"},()=>{}];
 
 // const value = arg.length;
 
@@ -45,17 +45,57 @@ arg.splice(2, 0, "Sabi"); //adds the new element in the index 2 moving the other
 
 // this is not mutating the original array but is reading the data from the array . here it is reading the data from index 3 to index 4 
 
-// changing the array to string and back to string 
+// changing the array to string and back to array 
 
-// const value = arg.toString();
-//changing the array to string
-
-const value = arg.split();
-
+const value = arg.toString();
+console.log(value);
+//it is changing the array to string
 
 
-console.log(value, arg);
+console.log(value.split(","));
+//changing the converted array to string back to array using the same separator used in array which is ','
+console.log(arg);
+
+
+//other way to channge array to string 
+const v1 = arg.join("-");
+console.log(v1);
+
+//changing back to array using split
+const v2 = v1.split("-");
+console.log(v2);
+//it is changing back to array from the converted string from array by removing the same separator used to make the array string  
+
+
+
+
+// indexOf(), includes() 
+
+const v3 = arg.indexOf("ram"); ///giving the index of the item we are providing inside the parenthesis
+console.log(v3);
+
+
+const v4 = arg.includes("ram"); //finding out if that item exists in the array and gives output in boolean
+console.log(v4);
+
+
 //sort, reverse
 
+console.log(arg.reverse());
+//reversing the order of the elements of the array
 
 
+console.log(arg.sort());
+
+
+//while sorting the function inside the array, it will look after the name of the function and sorts
+
+// in case of the number it looks after the first digit of the num and sorts 
+
+
+//another way to sort 
+
+console.log(arg.sort((a,b)=>a-b));
+
+
+console.log(arg.sort((a,b)=>b-a));
