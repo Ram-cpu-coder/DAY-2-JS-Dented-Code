@@ -147,3 +147,25 @@ do {
 
 
 //break
+
+
+
+
+
+// Javascript specific array loop
+
+const array = ["ram", "hari", 324, 33, 4["aar", 223]];
+
+console.log(array);
+
+const item = array[2];
+console.log(item);
+
+
+// for loop in array
+
+for (let a = 0; a < array.length; a++){
+    console.log(array[a]);
+    
+}
+
