@@ -387,32 +387,71 @@ console.log(add(2, 3));
 
 // Intermediate Function Questions
 // Factorial: Write a function named factorial that takes a non-negative integer and returns its factorial.
-let number = prompt("Please enter non-negative number!!!")
-let num = Number(number);
+// let number = prompt("Please enter non-negative number!!!")
+// let num = Number(number);
 
-function factorial(num) {
-    let result = 1;
-    if (num === 1) {
-        result = 1;
-    }
-    for (let i = 2; i <= num; i++) {
-        result = result * i;
-    }
+// function factorial(num) {
+//     let result = 1;
+//     if (num === 1) {
+//         result = 1;
+//     }
+//     for (let i = 2; i <= num; i++) {
+//         result = result * i;
+//     }
 
-    return result;
-}
+//     return result;
+// }
 
-if (num <= 0) {
-    alert("Please enter the non-negative integer!!!")
-} else {
-    console.log(num + " is the number from the user.");
-    console.log(factorial(num) + " is the factorial of " + number);
-}
+// if (num <= 0 || isNaN(num)) {
+//     alert("Please enter the non-negative integer!!!")
+// } else {
+//     console.log(num + " is the number from the user.");
+//     console.log(factorial(num) + " is the factorial of " + number);
+// }
 
 
 
 // Palindrome Check: Create a function named isPalindrome that checks if a given string is a palindrome (reads the same backward as forward).
 
+let str = prompt("Enter the word to check if is it Palindrome!!!");
+
+function isPalindrome(str){
+
+    for(let i = 0; i < str.length; i++){
+        let lastChar = str[str.length-1];
+
+        let newstr = str - lastChar;
+
+        newstr.concat() = lastChar + newstr;
+
+        console.log(newstr);
+        
+    }
+
+    // let reversedStr = str.reverse();
+
+
+    // if(str === reversedStr){
+    //     console.log(str + " is Palindrome word.");
+        
+    // }else{
+    //     console.log(str + " is not a Palindrome word.");
+        
+    // }
+    if(str === newstr){
+        console.log("sldkjf");
+        
+    }
+    
+}
+
+console.log(isPalindrome(str));
+
+// if(isNaN(str)){
+//     alert("Please Enter the word not the number!!!");
+// }else{
+//     console.log(isPalindrome(str));
+// }
 // Array Sum: Write a function named sumArray that takes an array of numbers and returns the sum of all the elements.
 
 // Fibonacci Sequence: Write a function named fibonacci that takes a number n and returns the first n numbers of the Fibonacci sequence in an array.
