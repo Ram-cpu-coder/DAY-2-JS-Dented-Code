@@ -342,6 +342,28 @@ console.log(isEven(4));
 
 
 // Find the Maximum of Three Numbers: Create a function named maxOfThree that takes three numbers as arguments and returns the largest of the three.
+function maxOfThree(a,b,c){
+    return Math.max(a,b,c);
+}
+
+console.log(maxOfThree(3,1,2));
+
+// orrr
+
+//if we dont want to use the Math prebuilt way to find out the max number
+function numbers(a, b, c){
+    if (a > b && a > c){
+        return a;
+    }else if (b > a && b > c){
+        return b;
+    }else{
+        return c;
+    }
+}
+
+console.log(numbers(3,10,6));
+
+
 
 // Intermediate Function Questions
 // Factorial: Write a function named factorial that takes a non-negative integer and returns its factorial.
