@@ -245,12 +245,12 @@ const obj = {
     name: "Ram",
     phone: 23084,
     isStudent: true,
-    skills: ["html", "css", ["react", "redux"],"js"],
+    skills: ["html", "css", ["react", "redux"], "js"],
     parent: {
         f: "harry",
         m: "mary",
     },
-    bio: () => { 
+    bio: () => {
         return "Hello";
     },
 }
@@ -311,57 +311,77 @@ const obj = {
 // Create an array of your favorite fruits. Write a function that takes this array and returns a new array with only the fruits that start with the letter "A".
 const favFruits = ["Apple", "Orange", "Banana", "Guava"];
 
-const newArg = favFruits.filter((item, i) =>item.includes("A"));
+const newArg = favFruits.filter((item, i) => item.includes("A"));
 console.log(newArg);
 
 
 // Basic Function Questions
 // Create a Function to Add Two Numbers: Write a function named add that takes two numbers as arguments and returns their sum.
 
-function add(a,b) {return a + b};
-console.log(add(2,3));
- 
+function add(a, b) { return a + b };
+console.log(add(2, 3));
+
 
 
 // Convert Celsius to Fahrenheit: Write a function named celsiusToFahrenheit that converts a temperature from Celsius to Fahrenheit.
 
-function celsiusToFahrenheit(c){
-    return (9/5 * c) +32;
-}
+// function celsiusToFahrenheit(c){
+//     return (9/5 * c) +32;
+// }
 
-console.log(celsiusToFahrenheit(0));
+// console.log(celsiusToFahrenheit(0));
 
 
 // Check Even or Odd: Write a function named isEven that takes a number as an argument and returns true if the number is even and false if it's odd.
-function isEven(num){
-    return num % 2 === 0
-    ?true
-    :false /// in ternary operator, dont forget to use the keyword 'return' like this before the condition 
-}
-console.log(isEven(4));
+// function isEven(num){
+//     return num % 2 === 0
+//     ?true
+//     :false /// in ternary operator, dont forget to use the keyword 'return' like this before the condition 
+// }
+// console.log(isEven(4));
 
 
 // Find the Maximum of Three Numbers: Create a function named maxOfThree that takes three numbers as arguments and returns the largest of the three.
-function maxOfThree(a,b,c){
-    return Math.max(a,b,c);
-}
+// function maxOfThree(a,b,c){
+//     return Math.max(a,b,c);
+// }
 
-console.log(maxOfThree(3,1,2));
+// console.log(maxOfThree(3,1,2));
 
 // orrr
 
 //if we dont want to use the Math prebuilt way to find out the max number
-function numbers(a, b, c){
-    if (a > b && a > c){
-        return a;
-    }else if (b > a && b > c){
-        return b;
-    }else{
-        return c;
+// function numbers(a, b, c){
+//     if (a > b && a > c){
+//         return a;
+//     }else if (b > a && b > c){
+//         return b;
+//     }else{
+//         return c;
+//     }
+// }
+
+// console.log(numbers(3,10,6));
+
+// or
+
+function num(a, b, c) {
+
+    const num = [a, b, c];
+
+    let max = 0;
+    for (let i = 0; i < num.length; i++) {
+
+        if (num[i] > max) {
+            max = num[i]
+        };
+        console.log(max + " is on process.");
     }
+    console.log(max + " is the maximum number.");
 }
 
-console.log(numbers(3,10,6));
+num(4, 8, 32);
+
 
 
 
