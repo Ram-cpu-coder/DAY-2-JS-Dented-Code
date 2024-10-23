@@ -313,3 +313,39 @@ const favFruits = ["Apple", "Orange", "Banana", "Guava"];
 
 const newArg = favFruits.filter((item, i) =>item.includes("A"));
 console.log(newArg);
+
+
+// Basic Function Questions
+// Create a Function to Add Two Numbers: Write a function named add that takes two numbers as arguments and returns their sum.
+
+function add(a,b) {return a + b};
+console.log(add(2,3));
+ 
+
+
+// Convert Celsius to Fahrenheit: Write a function named celsiusToFahrenheit that converts a temperature from Celsius to Fahrenheit.
+
+// Check Even or Odd: Write a function named isEven that takes a number as an argument and returns true if the number is even and false if it's odd.
+
+// Find the Maximum of Three Numbers: Create a function named maxOfThree that takes three numbers as arguments and returns the largest of the three.
+
+// Intermediate Function Questions
+// Factorial: Write a function named factorial that takes a non-negative integer and returns its factorial.
+
+// Palindrome Check: Create a function named isPalindrome that checks if a given string is a palindrome (reads the same backward as forward).
+
+// Array Sum: Write a function named sumArray that takes an array of numbers and returns the sum of all the elements.
+
+// Fibonacci Sequence: Write a function named fibonacci that takes a number n and returns the first n numbers of the Fibonacci sequence in an array.
+
+// Advanced Function Questions
+// Count Vowels in a String: Create a function named countVowels that takes a string and returns the number of vowels (a, e, i, o, u) in it.
+
+// Remove Duplicates from an Array: Write a function named removeDuplicates that takes an array and returns a new array with duplicate values removed.
+
+// Merge Two Arrays: Write a function named mergeArrays that takes two arrays and returns a new array that combines both arrays without duplicates.
+
+// Sort an Array of Objects: Create a function named sortByAge that takes an array of objects with a name and age property and returns the array sorted by age.
+
+// Bonus Challenge
+// Debounce Function: Implement a debounce function that takes another function and a delay in milliseconds, returning a new function that, when called, will delay the execution of the original function until after the delay has passed since the last time it was invoked.
