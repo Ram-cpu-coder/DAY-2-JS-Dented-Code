@@ -287,22 +287,29 @@ const obj = {
 // delete obj.name; //deletes the property
 // obj.name = undefined; // its not good to mutate the original object so we normally use this one to delete the property 
 
-obj.skills[2].pop("redux");
+// obj.skills[2].pop("redux");
 
-console.log(obj);
+// console.log(obj);
 
 
-///
-function customReduce(nums, fn, init){
-    let val = init;
+// ///
+// function customReduce(nums, fn, init){
+//     let val = init;
 
-    for(let i = 0; i<nums.length; i++){
-        val = fn(val + nums[i]);
-    }
+//     for(let i = 0; i<nums.length; i++){
+//         val = fn(val + nums[i]);
+//     }
 
-    return val;
-}
+//     return val;
+// }
 
-const nums = [ 2,3,3544,45,4];
-const summ = (a,b) => a + b;
-console.log(customReduce(nums, summ, 0));
+// const nums = [ 2,3,3544,45,4];
+// const summ = (a,b) => a + b;
+// console.log(customReduce(nums, summ, 0));
+
+// 1. Array Manipulation
+// Create an array of your favorite fruits. Write a function that takes this array and returns a new array with only the fruits that start with the letter "A".
+const favFruits = ["Apple", "Orange", "Banana", "Guava"];
+
+const newArg = favFruits.filter((item, i) =>item.includes("A"));
+console.log(newArg);
