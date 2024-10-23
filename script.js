@@ -333,6 +333,13 @@ console.log(celsiusToFahrenheit(0));
 
 
 // Check Even or Odd: Write a function named isEven that takes a number as an argument and returns true if the number is even and false if it's odd.
+function isEven(num){
+    return num % 2 === 0
+    ?true
+    :false /// in ternary operator, dont forget to use the keyword 'return' like this before the condition 
+}
+console.log(isEven(4));
+
 
 // Find the Maximum of Three Numbers: Create a function named maxOfThree that takes three numbers as arguments and returns the largest of the three.
 
