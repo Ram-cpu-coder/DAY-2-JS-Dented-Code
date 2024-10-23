@@ -365,28 +365,51 @@ console.log(add(2, 3));
 
 // or
 
-function num(a, b, c) {
+// function num(a, b, c) {
 
-    const num = [a, b, c];
+//     const num = [a, b, c];
 
-    let max = 0;
-    for (let i = 0; i < num.length; i++) {
+//     let max = 0;
+//     for (let i = 0; i < num.length; i++) {
 
-        if (num[i] > max) {
-            max = num[i]
-        };
-        console.log(max + " is on process.");
-    }
-    console.log(max + " is the maximum number.");
-}
+//         if (num[i] > max) {
+//             max = num[i]
+//         };
+//         console.log(max + " is on process.");
+//     }
+//     console.log(max + " is the maximum number.");
+// }
 
-num(4, 8, 32);
+// num(4, 8, 32);
 
 
 
 
 // Intermediate Function Questions
 // Factorial: Write a function named factorial that takes a non-negative integer and returns its factorial.
+let number = prompt("Please enter non-negative number!!!")
+let num = Number(number);
+
+function factorial(num) {
+    let result = 1;
+    if (num === 1) {
+        result = 1;
+    }
+    for (let i = 2; i <= num; i++) {
+        result = result * i;
+    }
+
+    return result;
+}
+
+if (num <= 0) {
+    alert("Please enter the non-negative integer!!!")
+} else {
+    console.log(num + " is the number from the user.");
+    console.log(factorial(num) + " is the factorial of " + number);
+}
+
+
 
 // Palindrome Check: Create a function named isPalindrome that checks if a given string is a palindrome (reads the same backward as forward).
 
