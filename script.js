@@ -325,6 +325,13 @@ console.log(add(2,3));
 
 // Convert Celsius to Fahrenheit: Write a function named celsiusToFahrenheit that converts a temperature from Celsius to Fahrenheit.
 
+function celsiusToFahrenheit(c){
+    return (9/5 * c) +32;
+}
+
+console.log(celsiusToFahrenheit(0));
+
+
 // Check Even or Odd: Write a function named isEven that takes a number as an argument and returns true if the number is even and false if it's odd.
 
 // Find the Maximum of Three Numbers: Create a function named maxOfThree that takes three numbers as arguments and returns the largest of the three.
