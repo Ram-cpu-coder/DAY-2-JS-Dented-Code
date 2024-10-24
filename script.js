@@ -413,45 +413,43 @@ console.log(add(2, 3));
 
 // Palindrome Check: Create a function named isPalindrome that checks if a given string is a palindrome (reads the same backward as forward).
 
+
+// let str = "wow";
 let str = prompt("Enter the word to check if is it Palindrome!!!");
 
-function isPalindrome(str){
-
-    for(let i = 0; i < str.length; i++){
-        let lastChar = str[str.length-1];
-
-        let newstr = str - lastChar;
-
-        newstr.concat() = lastChar + newstr;
-
-        console.log(newstr);
-        
-    }
-
-    // let reversedStr = str.reverse();
-
-
-    // if(str === reversedStr){
-    //     console.log(str + " is Palindrome word.");
-        
-    // }else{
-    //     console.log(str + " is not a Palindrome word.");
-        
-    // }
-    if(str === newstr){
-        console.log("sldkjf");
-        
-    }
-    
+function isNAN(){
+    const num = parseFloat(str);
+    return num;
 }
 
-console.log(isPalindrome(str));
 
-// if(isNaN(str)){
-//     alert("Please Enter the word not the number!!!");
-// }else{
-//     console.log(isPalindrome(str));
-// }
+let newstr = [];
+function isPalindrome(str) {
+
+    for (let i = (str.length - 1); i >= 0; i--) {
+        newstr = newstr + str[i];
+    }
+    return newstr;
+
+}
+console.log(
+    isPalindrome(str));
+if (str === newstr && !isNAN(str)) {
+    console.log(
+        "This is  Palindrome word.");
+}else if(isNAN(str)){
+    alert("Please Enter the word not the number!!!");
+    console.log("This is not even a word. Anyway I have reversed it for you. You are Welcome.");
+    
+} 
+else {
+    console.log(
+        "This is not a Palindrome word.");
+}
+
+
+
+
 // Array Sum: Write a function named sumArray that takes an array of numbers and returns the sum of all the elements.
 
 // Fibonacci Sequence: Write a function named fibonacci that takes a number n and returns the first n numbers of the Fibonacci sequence in an array.
