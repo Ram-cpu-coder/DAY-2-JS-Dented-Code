@@ -175,85 +175,85 @@
 
 
 ///creating the array of 50 random numbers in between 0 and 100
-const array = [];
-for (let i = 1; i < 50; i++) {
-    const result = Math.floor(Math.random() * 100) + 1;
-    // console.log(result);
+// const array = [];
+// for (let i = 1; i < 50; i++) {
+//     const result = Math.floor(Math.random() * 100) + 1;
+//     // console.log(result);
 
-    array.push(result);
-}
+//     array.push(result);
+// }
 
-console.log(array);
-
-
+// console.log(array);
 
 
-// ascending and descending order
 
-//ascending order
-const orderAscend = array.sort((a, b) => a - b)
-console.log(orderAscend);
 
-//descending order
-const orderDescend = array.sort((a, b) => b - a)
-console.log(orderDescend);
+// // ascending and descending order
+
+// //ascending order
+// const orderAscend = array.sort((a, b) => a - b)
+// console.log(orderAscend);
+
+// //descending order
+// const orderDescend = array.sort((a, b) => b - a)
+// console.log(orderDescend);
 
 
 // even and odd
 
 //even
-const even = array.filter((item, i) => item % 2 === 0);
-console.log(even);
+// const even = array.filter((item, i) => item % 2 === 0);
+// console.log(even);
 
-//odd
-const odd = array.filter((item, i) => item % 2 === 1);
-console.log(odd);
-
-
+// //odd
+// const odd = array.filter((item, i) => item % 2 === 1);
+// console.log(odd);
 
 
-//sum of all of the numbers inside the array
 
-const sum = array.reduce((acc, item) => acc + item, 0);
-console.log(sum);
+
+// //sum of all of the numbers inside the array
+
+// const sum = array.reduce((acc, item) => acc + item, 0);
+// console.log(sum);
 
 
 //unique random numbers
 
-const unique = [];
+// const unique = [];
 
-for (let i = 0; unique.length < 50; i++) {
+// for (let i = 0; unique.length < 50; i++) {
 
-    //only unique number 
+//     //only unique number 
 
-    const num = Math.floor(Math.random() * 100) + 1;
+//     const num = Math.floor(Math.random() * 100) + 1;
 
-    if (!unique.includes(num)) {
-        unique.push(num);
-    }
-    console.log(i);
+//     if (!unique.includes(num)) {
+//         unique.push(num);
+//     }
+//     console.log(i);
 
-}
+// }
 
-console.log(unique);
+// console.log(unique);
 
 
 
 ////OBJECT
 
-const obj = {
-    name: "Ram",
-    phone: 23084,
-    isStudent: true,
-    skills: ["html", "css", ["react", "redux"], "js"],
-    parent: {
-        f: "harry",
-        m: "mary",
-    },
-    bio: () => {
-        return "Hello";
-    },
-}
+// const obj = {
+//     name: "Ram",
+//     phone: 23084,
+//     isStudent: true,
+//     skills: ["html", "css", ["react", "redux"], "js"],
+//     parent: {
+//         f: "harry",
+//         m: "mary",
+//     },
+//     bio: () => {
+//         return "Hello";
+//     },
+// }
 
 // console.log(obj);
 
@@ -309,17 +309,17 @@ const obj = {
 
 // 1. Array Manipulation
 // Create an array of your favorite fruits. Write a function that takes this array and returns a new array with only the fruits that start with the letter "A".
-const favFruits = ["Apple", "Orange", "Banana", "Guava"];
+// const favFruits = ["Apple", "Orange", "Banana", "Guava"];
 
-const newArg = favFruits.filter((item, i) => item.includes("A"));
-console.log(newArg);
+// const newArg = favFruits.filter((item, i) => item.includes("A"));
+// console.log(newArg);
 
 
-// Basic Function Questions
-// Create a Function to Add Two Numbers: Write a function named add that takes two numbers as arguments and returns their sum.
+// // Basic Function Questions
+// // Create a Function to Add Two Numbers: Write a function named add that takes two numbers as arguments and returns their sum.
 
-function add(a, b) { return a + b };
-console.log(add(2, 3));
+// function add(a, b) { return a + b };
+// console.log(add(2, 3));
 
 
 
@@ -414,43 +414,48 @@ console.log(add(2, 3));
 // Palindrome Check: Create a function named isPalindrome that checks if a given string is a palindrome (reads the same backward as forward).
 
 
-// let str = "wow";
-let str = prompt("Enter the word to check if is it Palindrome!!!");
+// let str = prompt("Enter the word to check if is it Palindrome!!!");
 
-function isNAN(){
-    const num = parseFloat(str);
-    return num;
-}
+// function isNAN(){
+//     const num = parseFloat(str);
+//     return num;
+// }
 
 
-let newstr = [];
-function isPalindrome(str) {
+// let newstr = [];
+// function isPalindrome(str) {
 
-    for (let i = (str.length - 1); i >= 0; i--) {
-        newstr = newstr + str[i];
-    }
-    return newstr;
+//     for (let i = (str.length - 1); i >= 0; i--) {
+//         newstr = newstr + str[i];
+//     }
+//     return newstr;
 
-}
-console.log(
-    isPalindrome(str));
-if (str === newstr && !isNAN(str)) {
-    console.log(
-        "This is  Palindrome word.");
-}else if(isNAN(str)){
-    alert("Please Enter the word not the number!!!");
-    console.log("This is not even a word. Anyway I have reversed it for you. You are Welcome.");
-    
-} 
-else {
-    console.log(
-        "This is not a Palindrome word.");
-}
+// }
+// console.log(
+//     isPalindrome(str));
+// if (str === newstr && !isNAN(str)) {
+//     console.log(
+//         "This is  Palindrome word.");
+// }else if(isNAN(str)){
+//     alert("Please Enter the word not the number!!!");
+//     console.log("This is not even a word. Anyway I have reversed it for you. You are Welcome.");
+
+// } 
+// else {
+//     console.log(
+//         "This is not a Palindrome word.");
+// }
 
 
 
 
 // Array Sum: Write a function named sumArray that takes an array of numbers and returns the sum of all the elements.
+let arg = [3, 2, 5];
+function sumArray(arg) {
+    return arg.reduce((acc, item) => acc + item, 0);
+}
+console.log(sumArray(arg));
+
 
 // Fibonacci Sequence: Write a function named fibonacci that takes a number n and returns the first n numbers of the Fibonacci sequence in an array.
 
