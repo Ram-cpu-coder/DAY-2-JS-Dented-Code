@@ -450,14 +450,39 @@
 
 
 // Array Sum: Write a function named sumArray that takes an array of numbers and returns the sum of all the elements.
-let arg = [3, 2, 5];
-function sumArray(arg) {
-    return arg.reduce((acc, item) => acc + item, 0);
-}
-console.log(sumArray(arg));
+// let arg = [3, 2, 5];
+// function sumArray(arg) {
+//     return arg.reduce((acc, item) => acc + item, 0);
+// }
+// console.log(sumArray(arg));
 
 
 // Fibonacci Sequence: Write a function named fibonacci that takes a number n and returns the first n numbers of the Fibonacci sequence in an array.
+
+// first n numbers of the fibonacci seq
+
+let n = 8;
+
+function fibonacci(n){
+    let firstN = [0,1];
+    let a = 0, b = 1, sum;
+    if(n<=0){return []}
+    if(n === 0){return 0}
+    if(n === 1){return 1}
+
+    for(let i = 2; i<n; i++){
+        sum=a+b;
+        a=b;
+        b=sum;
+
+        firstN.push(sum);
+    }
+    return firstN;
+}
+console.log(fibonacci(n));
+
+
+
 
 // Advanced Function Questions
 // Count Vowels in a String: Create a function named countVowels that takes a string and returns the number of vowels (a, e, i, o, u) in it.
