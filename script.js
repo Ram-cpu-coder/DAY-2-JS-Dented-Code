@@ -514,7 +514,7 @@
 
 // You can return the answer in any order.
 
- 
+
 
 // Example 1:
 
@@ -524,25 +524,61 @@
 
 
 
-const nums = [4,23,56,34]
-const target = 57;
+// const nums = [4,23,56,34]
+// const target = 57;
 
-function twoSum(nums){
-    for(let i = 0; i<nums.length; i++){
+// function twoSum(nums){
+//     for(let i = 0; i<nums.length; i++){
 
-        for(let j = i + 1; j < nums.length; j++){
-            if( nums[i] + nums[j] === target){
-                return[i,j];
-            }
+//         for(let j = i + 1; j < nums.length; j++){
+//             if( nums[i] + nums[j] === target){
+//                 return[i,j];
+//             }
+//         }
+//     }
+
+// }
+
+// console.log(twoSum(nums));
+
+
+// ========================================================================
+
+
+
+
+// You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+
+// You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+
+
+const num1 = [9, 8];
+const num2 = [9, 8];
+
+function sum(num1, num2) {
+    const output = [];
+    let carry = 0;
+    for (let i = 0; i < Math.max(num1.length, num2.length); i++) {
+        let digit1 = i < num1.length ? num1[i] : 0;
+        let digit2 = i < num2.length ? num2[i] : 0;
+
+        let result = digit1 + digit2 + carry;
+
+        if(result >= 10){
+            carry = 1;
+            result -= 10;
+        }else{
+            carry = 0;
         }
-        return nums[i], nums[j];
+        output.push(result);
     }
-    
-
+    if(carry){
+        output.push(carry);
+    }
+    const finalResult = output.reverse().join("");
+    return finalResult;
 }
-
-console.log(twoSum(nums));
-
+console.log(sum(num1, num2));
 
 
 
