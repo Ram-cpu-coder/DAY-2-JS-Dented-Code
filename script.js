@@ -628,7 +628,7 @@
 const roman = prompt("Enter the Roman Number");
 
 function romanToInt(roman){
-    let result = 0;
+  
     const obj = {
         I : 1,
         V : 5,
@@ -638,17 +638,21 @@ function romanToInt(roman){
         D : 500,
         M : 1000
     };
-
+  let result = 0;
     for(let i = 0; i < roman.length; i++){
-        if(obj[roman[i]] >= obj[roman[i+1]]){
-            result += obj[roman[i]];
-        } else if(obj[roman[i]] < obj[roman[i+1]]){
-            result -= obj[roman[i]];
-        } else{
+        if(obj[roman[i]] === roman.length -1){
             result += obj[roman[roman.length - i]];
+        } else if(obj[roman[i]] < obj[roman[i+1]]){
+            result = result - obj[roman[i]];
+        } else{
+            
+            result += obj[roman[i]];
         }
+       
     }
+    
     return result;
+
 }
 
 console.log(romanToInt(roman));
