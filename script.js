@@ -552,34 +552,54 @@
 // You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 
 
-const num1 = [9, 8];
-const num2 = [9, 8];
+// const num1 = [9, 8, 1];
+// const num2 = [9, 8];
 
-function sum(num1, num2) {
-    const output = [];
-    let carry = 0;
-    for (let i = 0; i < Math.max(num1.length, num2.length); i++) {
-        let digit1 = i < num1.length ? num1[i] : 0;
-        let digit2 = i < num2.length ? num2[i] : 0;
+// function sum(num1, num2) {
+//     const output = [];
+//     let carry = 0;
+//     for (let i = 0; i < Math.max(num1.length, num2.length); i++) {
+//         let digit1 = i < num1.length ? num1[i] : 0;
+//         let digit2 = i < num2.length ? num2[i] : 0;
 
-        let result = digit1 + digit2 + carry;
+//         let result = digit1 + digit2 + carry;
 
-        if(result >= 10){
-            carry = 1;
-            result -= 10;
-        }else{
-            carry = 0;
-        }
-        output.push(result);
+//         if(result >= 10){
+//             carry = 1;
+//             result -= 10;
+//         }else{
+//             carry = 0;
+//         }
+//         output.push(result);
+//     }
+//     if(carry){
+//         output.push(carry);
+//     }
+//     const finalResult = output.reverse().join("");
+//     return finalResult;
+// }
+// console.log(sum(num1, num2));
+
+
+
+
+// isPalindrome
+
+const x = 0;
+
+function isPalindrome(x) {
+    if (x <= 0) {
+        return false;
     }
-    if(carry){
-        output.push(carry);
-    }
-    const finalResult = output.reverse().join("");
-    return finalResult;
+    const strX = x.toString();
+    let result = '';
+
+    for (i = strX.length - 1; i >= 0; i--) {
+        result += strX[i];
+        // console.log(result);     
+
+    };
+    return result === strX;
+    
 }
-console.log(sum(num1, num2));
-
-
-
-
+console.log(isPalindrome(x));
